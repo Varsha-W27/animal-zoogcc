@@ -1,0 +1,72 @@
+User- reg table:-
+desc user_reg;
++------------------+--------------+------+-----+---------+-------+
+| Field            | Type         | Null | Key | Default | Extra |
++------------------+--------------+------+-----+---------+-------+
+| full_name        | varchar(50)  | YES  |     | NULL    |       |
+| Email_id         | varchar(50)  | YES  |     | NULL    |       |
+| contact          | int(10)      | YES  |     | NULL    |       |
+| password         | varchar(10)  | YES  |     | NULL    |       |
+| confirm_password | varchar(10)  | YES  |     | NULL    |       |
+| address          | varchar(250) | YES  |     | NULL    |       |
+| city             | varchar(20)  | YES  |     | NULL    |       |
+| state            | varchar(20)  | YES  |     | NULL    |       |
+| country          | varchar(20)  | YES  |     | NULL    |       |
++------------------+--------------+------+-----+---------+-------+
+Table for Tickets:-
+create table tickets(first_name varchar(50),
+last_name varchar(50),
+adult varchar(20),
+child varchar(20),
+student varchar(20),
+date varchar(20),
+camera varchar(20),
+video varchar(10),
+vehicle varchar(10)
+);
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| first_name | varchar(50) | YES  |     | NULL    |       |
+| last_name  | varchar(50) | YES  |     | NULL    |       |
+| adult      | varchar(20) | YES  |     | NULL    |       |
+| child      | varchar(20) | YES  |     | NULL    |       |
+| student    | varchar(20) | YES  |     | NULL    |       |
+| date       | varchar(20) | YES  |     | NULL    |       |
+| camera     | varchar(20) | YES  |     | NULL    |       |
+| video      | varchar(10) | YES  |     | NULL    |       |
+| vehicle    | varchar(10) | YES  |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+Review
+Create table review( message varchar(250)
+);
++---------+--------------+------+-----+---------+-------+
+| Field   | Type         | Null | Key | Default | Extra |
++---------+--------------+------+-----+---------+-------+
+| message | varchar(250) | YES  |     | NULL    |       |
++---------+--------------+------+-----+---------+-------+
+create table user_update(full_name varchar(50),
+Email_id varchar(20),
+contact int(10),
+password varchar(20),
+confirm_password varchar(20),
+date varchar(15),
+address varchar(250),
+city varchar(20),
+state varchar(20),
+country varchar(20)
+);
++------------------+--------------+------+-----+---------+-------+
+| Field            | Type         | Null | Key | Default | Extra |
++------------------+--------------+------+-----+---------+-------+
+| full_name        | varchar(50)  | YES  |     | NULL    |       |
+| Email_id         | varchar(20)  | YES  |     | NULL    |       |
+| contact          | int(10)      | YES  |     | NULL    |       |
+| password         | varchar(20)  | YES  |     | NULL    |       |
+| confirm_password | varchar(20)  | YES  |     | NULL    |       |
+| date             | varchar(15)  | YES  |     | NULL    |       |
+| address          | varchar(250) | YES  |     | NULL    |       |
+| city             | varchar(20)  | YES  |     | NULL    |       |
+| state            | varchar(20)  | YES  |     | NULL    |       |
+| country          | varchar(20)  | YES  |     | NULL    |       |
++------------------+--------------+------+-----+---------+-------+

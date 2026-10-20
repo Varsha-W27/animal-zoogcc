@@ -1,0 +1,134 @@
+<html>
+<head>
+<link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet"
+type="text/css" media="all"/>
+<title>Registration Page</title>
+
+<meta charset="UTF-7">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+	body{
+	background-color:#20c997;
+	background-image: url('image.jpg');
+			background-size: cover;
+			background-position: center;
+			font-family: Arial, sans-serif;
+	}
+        {
+            font-family: Arial, sans-serif;
+            background-color: #87CEEB;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+		
+			
+        .container {
+            background-color:rgba(255,255,255,0.13);
+            padding: 10px;
+            border-radius: 5px;
+			backdrop-filter: blur(10px);
+			border: 2px solid rgba(255,255,255,0.1);
+			box-shadow: 0 0 40px rgba(8,7,16,0.6);
+            width: 800px;
+			height:1100px
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: red;
+        }
+    </style>
+	
+</head>
+<body>
+<form action="user_reg.php" method="post">
+<div class="container">
+<center>
+<h4> Create User Account </h4>
+</center>
+<br>
+ &nbsp; <b> Full Name:</b><br>
+<input type="text" style="width:700px;" name="fullname" placeholder="Full Name" /required>
+<br>
+&nbsp; <b> Email Id: </b> <br>
+<input type="email" style="width:700px;"  name="emailid" placeholder="Email Id" /required>
+<br>
+&nbsp;<b> Contact Number: </b><br>
+<input type="tel" style="width:700px;"   maxlength="10" name="contact" placeholder="Contact Number" /required>
+<br>
+&nbsp;<b> Password:</b><br>
+<input type="password" style="width:700px;" name="password" placeholder="Password" /required>
+<br>
+&nbsp;<b> Confirm Password:</b> <br>
+<input type="password" style="width:700px;" name="cpassword" placeholder=" Confirm Password" /required>
+<br>
+&nbsp;<b> Address: </b><br>
+<div class="form-floating">
+  <textarea class="form-control" placeholder="Address" name="address" style="height: 100px"required></textarea>
+</div>
+
+<br><br>
+ &nbsp; <b> City: </b>
+<br>
+<select name="city" id="city" style="width:700px;" class="form-control">
+<option value="Belgavi"  selected> Belgavi </option>
+<option value="Mumbai" selected> Mumbai </option>
+<option value="Bengaluru" selected> Bengaluru </option>
+<option value="Pune" selected> Pune </option>
+<option value="Other" selected> Other </option>
+<option value="city" selected> Plz Enter Your City </option>
+</select>
+<br>
+&nbsp;<b> State: </b>
+<br>
+<select name="state" id="state"style="width:700px;" class="form-control" >
+<option value="Karnataka" selected> Karnataka </option>
+<option value="Maharastra" selected> Maharashtra </option>
+<option value="Andhra Pradesh" selected> Andhra Pradesh </option>
+<option value="Bhihar" selected> Bihar </option>
+<option value="Delhi" selected> Delhi </option>
+<option value="Other" selected> Other </option>
+</select>
+<br>
+&nbsp;<b> Country:</b>
+<br>
+<select name="country" id="country"style="width:700px;" class="form-control" >
+<option value="India" selected> India </option>
+<option value="Sri Lanaka" selected> Sri Lanka </option>
+<option value="China" selected> China </option>
+<option value="Other" selected> Other </option>
+</select>
+<br>
+<br>
+<center>
+<button type="submit" class="btn btn-success"style="width:100px;"><h5>Submit</h5></button>
+<p>Already have an account? <a href="sign.html">Login</a></p>
+</form>
+</center>
+</body>
+</html>

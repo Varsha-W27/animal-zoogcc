@@ -1,0 +1,16 @@
+<?php
+include_once("connection.php");
+$sql="update user_reg set full_name='".$_POST['fullname']."',Email_id='".$_POST['emailid']."',conatct='".$_POST['contact']."',password='".$_POST['password']."',confirm_password='".$_POST['cpassword']."',address='".$_POST['address']."',city='".$_POST['city']."',state='".$_POST['state']."',country='".$_POST['country']."')";
+$res=mysqli_query($con, $sql);
+if(res)
+{
+	header('location: upd_user.php');
+}
+else
+{
+	?>
+		<script>
+		alret('failed to update');
+		</script>
+		<?php
+}

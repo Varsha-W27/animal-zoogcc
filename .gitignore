@@ -1,0 +1,5 @@
+connection.php
+*.sql
+.env
+.env.*
+!.env.example

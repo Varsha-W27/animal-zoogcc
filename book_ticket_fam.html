@@ -1,0 +1,142 @@
+<html>
+<head>
+<link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet"
+type="text/css" media="all"/>
+<style>
+	
+.container{
+		height:500px;
+		width:700px;
+		background-color:white;
+}
+		
+</style>
+</head>
+<body>
+<!--Ganesh-->
+<html>
+<head>
+<link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet"
+type="text/css" media="all"/>
+<title> Ticket Form </title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position:relative;
+  top:-100%;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>
+
+<body>
+<form action="family_ticket.php" method="post">
+<center> <h4> Ticket Counter</h4>  </center>
+<br>
+<table >
+<tr>
+<center>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><a href="book_ticket_fam.html" > <img src="ticket3.jpg"  style="width:80%;">
+</a>
+
+<h5><font color="green"> Family</h5></font> </center>
+</td>
+<td> <a href="book_ticket_std.html"> <img src="ticket2.jpg" style="width:80%;">
+</a>
+<h5><font color="green">Student</h5>
+</td>
+<td> <a href="book_ticket_single.html"> <img src="ticket4.jpg" style="width:70%;"style="height:40%;">
+</a>
+<h5><font color="green">Individual</h5></td>
+</table>
+
+
+
+<!--Ganesh-->
+<!-- <form action="family_ticket.php" method="post"> -->
+<br>
+<center> <h5> <font color="green">Ticket- Counter for Family  </h5> </font> </center>
+<br>
+<!-- <div class="container">-->
+<div class="row g-1">
+  <div class="col">
+ &nbsp; <label> <b> First Name</b> </label>
+ <input type="text" class="form-control" placeholder="First Name" name="first" aria-label="First name"required>
+  </div>
+  <div class="col">
+ &nbsp; <label><b> Last Name </b> </label>
+    <input type="text" class="form-control" placeholder="Last Name" name="last" aria-label="Last name"required>
+  </div>
+</div>
+<br>
+<br>
+<div class="row g-3">
+  <div class="col">                                                                                                                             
+ &nbsp; <label> <b> Contact</b></label>
+    <input type="text" class="form-control" placeholder="contact" pattern="[789][0-9]{9}"name="contact" aria-label="Email"required>
+  </div>
+  <div class="col">
+  <label><b> Email Id</b> </label>
+    <input type="text" class="form-control" placeholder="Email" name="email"aria-label="Contact"required>
+  </div>
+</div>
+
+<br>
+
+<div class="row g-3">
+  <div class="col">
+  <label><b> Number Of Children Visiting</b> </label>
+    <input type="number" class="form-control" placeholder="Number Of children Visiting" name="child" aria-label="child"required>
+  </div>
+  <div class="col">
+  <label><b> Number Of Adult Visiting</b> </label>
+    <input type="number" class="form-control" placeholder="Number of Adult visiting" name="adult"aria-label="Contact"required>
+  </div>
+</div>
+<br>
+<div class="row g-3">
+<div class="col">
+    <label for="inputState" class="form-label"><b> Camera</b></label>
+    <select name="camera" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="no">No</option>
+      </select>
+  </div>
+  <div class="col">
+    <label for="inputState" class="form-label"><b> Video </b></label>
+    <select name="video" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="no">No</option>
+      </select>
+  </div>
+  <div class="col">
+    <label for="inputState" class="form-label"><b> Vehicle</b></label>
+    <select name="vehicle" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="no">No</option>
+      </select>
+  </div>
+<!--</div>-->
+<br>
+<br>
+<br>
+<br>
+<div class="row g-3">
+<div class="col">
+<center><button type="submit" class="btn btn-success" style="width:200px;"><h5> Submit</h5></button>
+ </center><hr> </hr>
+</div>
+<h5> <CENTER> CHARGES </CENTER> </H5>
+<BR>
+<b> ADULT : 100 Rs per person
+&nbsp; CHILD (Age Group:5 To 13 Yrs) : 50 Rs per child
+&nbsp;
+<br> CAMERA CHARGES: 100 RS 
+&nbsp; VIDEO CHARGES: 100 RS &nbsp; VEHICLE CHARGES:50 Rs </b>
+</form>
+</html>

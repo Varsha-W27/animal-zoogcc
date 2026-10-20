@@ -1,0 +1,106 @@
+<html>
+<head>
+<link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet"
+type="text/css" media="all"/>
+<style>
+		.container{
+		height:520px;
+		width:700px;
+		font-size:20px;
+		background-color:white;
+	}
+</style>
+</head>
+<body>
+<form action="book_ticket_std.php" method="post">
+<center> <h4> Ticket Counter</h4>  </center>
+<br>
+<table >
+<tr>
+<center>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><a href="book_ticket_fam.html" > <img src="ticket3.jpg" style="width:80%;">
+</a>
+<h5><font color="green"> Family</h5></font> </center>
+</td>
+<td> <a href="book_ticket_std.html"> <img src="ticket2.jpg"  style="width:80%;">
+</a>
+<h5><font color="green">Student</h5>
+</td>
+<td> <a href="book_ticket_single.html"> <img src="ticket4.jpg" style="width:70%;"style="height:40%;">
+</a>
+<h5><font color="green">Individual</h5></td>
+</table>
+<hr color="green"> </hr>
+</body>
+</html> 
+<!-- Ganesh
+-->
+<br>
+<br>
+
+<font color="green"> Ticket - Counter for Student </font>
+<br>
+<br>
+<center>
+<div class="row g-3">
+  <div class="col">
+ 
+  <label> <b> School / College Name</b> </label>
+ <input type="text" class="form-control" placeholder=" Name" name="institute"style="width:700px;" aria-label="First name"required>
+  </div>
+<div class="row g-3">
+  <div class="col">
+  <label><b> Number Of Student Visiting</b> </label>
+  <br>
+    <input type="number" class="form-control" placeholder="Number Of student Visiting"style="width:700px;" name="student" aria-label="child"required>
+  </div>
+  <div class="col">
+  <label><b> Number Of Teacher Visiting</b> </label>
+    <input type="number" class="form-control" placeholder="Number of teacher visiting" style="width:700px;"name="teacher" aria-label="Contact"required>
+  </div>
+</div>
+<div class="row g-3">
+  <div class="col">
+  <label> <b> Date</b> </label>
+  <br>
+ <input type="date" class="form-control" placeholder="Date" name="date"style="width:700px;" aria-label="First name"required>
+  </div>
+<br>
+</center>
+<div class="row g-3">
+<div class="col">
+    <label for="inputcamera" class="form-label"><b> Camera</b></label>
+	<br>
+    <select name="camera" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="yes">No</option>
+      </select>
+  </div>
+  <div class="col">
+    <label for="inputvideo" class="form-label"><b> Video </b></label>
+	<br>
+    <select name="video" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="no">No</option>
+      </select>
+  </div>
+  <div class="col">
+    <label for="inputvehicle" class="form-label"><b> Vehicle</b></label>
+    <select name="vehicle" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="no">No</option>
+      </select>
+  </div>
+</div>
+<br><center> 
+<button type="submit" class="btn btn-success" style="width:200px;"><h5> Submit</h5></button> </center>
+</div>
+<hr> </hr>
+<CENTER> <B> CHARGES  </center>
+FORM GRADE 1 TO GRADE 7 CHARGES : 50 RS per Student.<br>
+FORM GRADE 8 TO GRADE 12 CHARGES : 100 RS per Student.<br>
+FORM UG AND PG Students: 150 RS per Student.<br>
+FORM STAFF: 150 RS per Member.</B>
+</form>
+</html>

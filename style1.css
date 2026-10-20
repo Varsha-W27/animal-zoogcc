@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    max-width: 600px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    color: #333;
+}
+
+.pay-tabs h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.resp-tabs-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.resp-tab-item {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.resp-tab-item:hover {
+    background: #0056b3;
+}
+
+.resp-tab-content {
+    display: none;
+}
+
+.resp-tab-content-active {
+    display: block;
+}
+
+.payment-info {
+    padding: 20px;
+}
+
+.payment-info h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.tab-for {
+    margin-bottom: 20px;
+}
+
+.tab-for h5 {
+    margin: 10px 0;
+    font-weight: 600;
+    color: #555;
+}
+
+.tab-for input[type="text"],
+.tab-for input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.transaction {
+    display: flex;
+    justify-content: space-between;
+}
+
+.transaction ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.transaction ul li {
+    display: inline-block;
+    width: 48%;
+}
+
+.transaction ul li input {
+    width: 100%;
+}
+
+.transaction .tab-form-right {
+    width: 48%;
+}
+
+.tab-form-right input {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #218838;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Additional Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .transaction {
+        flex-direction: column;
+    }
+
+    .transaction ul li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .transaction .tab-form-right {
+        width: 100%;
+    }
+}

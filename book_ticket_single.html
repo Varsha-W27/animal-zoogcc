@@ -1,0 +1,140 @@
+<html>
+<head>
+<link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet"
+type="text/css" media="all"/>
+<style>
+			
+		.container{
+		height:700px;
+		width:800px;
+		font-size:18px;
+		background-color:white;
+}
+</style>
+</head>
+<body>
+<!--Ganesh
+-->
+<html>
+<head>
+<link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet"
+type="text/css" media="all"/>
+<title> Ticket Form </title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position:relative;
+  top:-100%;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+
+<center> <h4> Ticket Counter</h4>  </center>
+<br>
+<table >
+<tr>
+<center>
+<td>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><a href="book_ticket_fam.html" > <img src="ticket3.jpg" style="width:80%;">
+</a>
+<h5><font color="green"> Family</h5></font> </center>
+</td>
+<td> <a href="book_ticket_std.html"> <img src="ticket2.jpg"  style="width:80%;">
+</a>
+<h5><font color="green">Student</h5>
+</td>
+<td> <a href="book_ticket_single.html"> <img src="ticket4.jpg" style="width:70%;"style="height:40%;">
+</a>
+<h5><font color="green">Individual</h5></td>
+</table>
+<hr color="green"> </hr>
+</body>
+</html> 
+<!-- Ganesh
+-->
+<head>
+<link href="bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet"
+type="text/css" media="all"/></head>
+<form action="book_ticket_single.php" method="post">
+<br>
+<!--<div class="container">  -->
+<center>
+<font color="green"> Ticket - Counter for Single Entry </font> </center>
+<br>
+<br>
+<center>
+<div class="row g-3">
+  <div class="col">
+  <label> <b> Full Name</b> </label>
+
+  <br>
+ <input type="text" class="form-control" placeholder="Full Name" style="width:700px;"name="name" aria-label="First name"required>
+  </div>
+<div class="row g-3">
+  <div class="col">
+  <label> <b> Date</b> </label>
+  <br>
+ <input type="date" class="form-control" placeholder="Date"style="width:700px;" name="date" aria-label="date"required>
+  </div>
+  
+<br>
+<div class="row g-3">
+<div class="col">
+    <label for="inputgender" class="form-label" ><b> Gender </b></label>
+	<br>
+    <select name="gender"style="width:700px;" class="form-select"required>
+      <option value="male">Male</option>
+	  <option value="female">Female</option>
+      </select>
+  </div>
+  </center>
+  <br>
+ <div class="row g-3">
+<div class="col">
+    <label><b> Camera</b></label>
+	<br>
+    <select name="camera" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="yes">No</option>
+      </select>
+  </div>
+  <div class="col">
+    <label for="inputvideo" class="form-label"><b> Video </b></label>
+	<br>
+    <select name="video" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="no">No</option>
+      </select>
+  </div>
+  <div class="col">
+    <label for="inputvehicle" class="form-label"><b> Vehicle</b></label>
+    <select name="vehicle" class="form-select"required>
+      <option value="yes">Yes</option>
+	  <option value="no">No</option>
+      </select>
+  </div>
+</div>
+<br>
+<center>
+<button type="submit" class="btn btn-success" style="width:200px;"><h5> Submit</h5></button>
+</center>
+</div>
+
+<hr> </hr>
+<CENTER> <B> CHARGES For Single Entry : 100 Rs  </center>
+Camera Charges: 50 Rs &nbsp;
+Camera Video: 50 Rs &nbsp; Vehilce Charges: 50 Rs</b> 
+<br>
+<br>
+<!--button type="submit" style="width:200px;" class="btn btn-danger" ><h5> Cancel Ticket</h5></button--!>
+
+</div>
+</form>
+</body>
+</html>
